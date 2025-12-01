@@ -967,125 +967,182 @@
           , s = r.React.useMemo(function() {
             return o.create({
                 container: {
-                    padding: 16,
-                    gap: 16
+                    padding: 20,
+                    paddingBottom: 40
                 },
                 section: {
-                    gap: 8
+                    backgroundColor: "rgba(255, 255, 255, 0.05)",
+                    borderRadius: 16,
+                    padding: 20,
+                    marginBottom: 16,
+                    borderWidth: 1,
+                    borderColor: "rgba(255, 255, 255, 0.08)"
                 },
                 sectionTitle: {
-                    color: "#f8fafc",
-                    fontSize: 16,
-                    fontWeight: "700"
+                    color: "#ffffff",
+                    fontSize: 20,
+                    fontWeight: "700",
+                    marginBottom: 18,
+                    letterSpacing: 0.3
                 },
                 label: {
-                    color: "#f3f4f6",
-                    fontSize: 14,
-                    fontWeight: "600"
+                    color: "#e2e8f0",
+                    fontSize: 13,
+                    fontWeight: "600",
+                    marginBottom: 8,
+                    marginTop: 12,
+                    textTransform: "uppercase",
+                    letterSpacing: 0.5
                 },
                 helper: {
-                    color: "#cbd5f5",
-                    fontSize: 12
+                    color: "#94a3b8",
+                    fontSize: 12,
+                    marginTop: 8,
+                    lineHeight: 18,
+                    fontStyle: "italic"
                 },
                 input: {
-                    borderRadius: 8,
-                    backgroundColor: "rgba(148, 163, 184, 0.2)",
-                    paddingHorizontal: 12,
-                    paddingVertical: 10,
+                    borderRadius: 12,
+                    backgroundColor: "rgba(30, 41, 59, 0.6)",
+                    paddingHorizontal: 16,
+                    paddingVertical: 14,
                     color: "#f8fafc",
-                    fontSize: 14
+                    fontSize: 15,
+                    borderWidth: 1,
+                    borderColor: "rgba(148, 163, 184, 0.2)"
                 },
                 inputDisabled: {
-                    opacity: .5
+                    opacity: .4,
+                    backgroundColor: "rgba(30, 41, 59, 0.3)"
                 },
                 textArea: {
-                    borderRadius: 8,
-                    backgroundColor: "rgba(148, 163, 184, 0.2)",
-                    paddingHorizontal: 12,
-                    paddingVertical: 10,
+                    borderRadius: 12,
+                    backgroundColor: "rgba(30, 41, 59, 0.6)",
+                    paddingHorizontal: 16,
+                    paddingVertical: 14,
                     color: "#f8fafc",
-                    fontSize: 14,
-                    minHeight: 80,
-                    textAlignVertical: "top"
+                    fontSize: 15,
+                    minHeight: 100,
+                    textAlignVertical: "top",
+                    borderWidth: 1,
+                    borderColor: "rgba(148, 163, 184, 0.2)"
                 },
                 button: {
                     backgroundColor: "#5865f2",
-                    paddingVertical: 12,
-                    borderRadius: 8,
-                    alignItems: "center"
+                    paddingVertical: 16,
+                    borderRadius: 12,
+                    alignItems: "center",
+                    marginTop: 8,
+                    shadowColor: "#5865f2",
+                    shadowOffset: { width: 0, height: 4 },
+                    shadowOpacity: 0.3,
+                    shadowRadius: 8,
+                    elevation: 4
                 },
                 buttonSecondary: {
-                    backgroundColor: "rgba(148, 163, 184, 0.35)"
+                    backgroundColor: "rgba(71, 85, 105, 0.6)",
+                    shadowColor: "#000",
+                    shadowOpacity: 0.2
                 },
                 buttonDanger: {
-                    backgroundColor: "#dc2626"
+                    backgroundColor: "#ef4444",
+                    shadowColor: "#ef4444"
                 },
                 buttonDisabled: {
-                    opacity: .5
+                    opacity: .5,
+                    shadowOpacity: 0
                 },
                 buttonText: {
                     color: "#fff",
-                    fontSize: 15,
-                    fontWeight: "600"
+                    fontSize: 16,
+                    fontWeight: "700",
+                    letterSpacing: 0.5
                 },
                 messageSection: {
-                    gap: 12
+                    backgroundColor: "rgba(255, 255, 255, 0.03)",
+                    borderRadius: 16,
+                    padding: 20,
+                    marginBottom: 16,
+                    borderWidth: 1,
+                    borderColor: "rgba(255, 255, 255, 0.06)"
                 },
                 toggleRow: {
                     flexDirection: "row",
                     alignItems: "center",
                     justifyContent: "space-between",
-                    paddingVertical: 4
+                    backgroundColor: "rgba(30, 41, 59, 0.4)",
+                    padding: 16,
+                    borderRadius: 12,
+                    marginTop: 12,
+                    borderWidth: 1,
+                    borderColor: "rgba(148, 163, 184, 0.15)"
                 },
                 toggleLabel: {
-                    color: "#f8fafc",
-                    fontSize: 14,
+                    color: "#f1f5f9",
+                    fontSize: 15,
                     fontWeight: "600",
                     flexShrink: 1
                 },
                 messageCard: {
-                    borderRadius: 10,
-                    backgroundColor: "rgba(15, 23, 42, 0.6)",
-                    padding: 12,
-                    gap: 6
+                    borderRadius: 14,
+                    backgroundColor: "rgba(30, 41, 59, 0.7)",
+                    padding: 16,
+                    marginBottom: 12,
+                    borderWidth: 1,
+                    borderColor: "rgba(148, 163, 184, 0.15)",
+                    shadowColor: "#000",
+                    shadowOffset: { width: 0, height: 2 },
+                    shadowOpacity: 0.1,
+                    shadowRadius: 4,
+                    elevation: 2
                 },
                 messageTitle: {
                     color: "#f8fafc",
-                    fontSize: 14,
-                    fontWeight: "600"
+                    fontSize: 15,
+                    fontWeight: "700",
+                    marginBottom: 8,
+                    lineHeight: 20
                 },
                 messageMeta: {
                     color: "#94a3b8",
-                    fontSize: 12
+                    fontSize: 12,
+                    marginBottom: 4,
+                    lineHeight: 18
                 },
                 messageActions: {
                     flexDirection: "row",
-                    gap: 8,
-                    marginTop: 6
+                    gap: 10,
+                    marginTop: 12
                 },
                 inlineButton: {
                     flex: 1,
-                    borderRadius: 6,
-                    paddingVertical: 8,
+                    borderRadius: 10,
+                    paddingVertical: 10,
                     alignItems: "center",
-                    backgroundColor: "rgba(148, 163, 184, 0.25)"
+                    backgroundColor: "rgba(88, 101, 242, 0.2)",
+                    borderWidth: 1,
+                    borderColor: "rgba(88, 101, 242, 0.3)"
                 },
                 inlineButtonDanger: {
-                    backgroundColor: "rgba(220, 38, 38, 0.15)",
+                    backgroundColor: "rgba(239, 68, 68, 0.15)",
                     borderWidth: 1,
-                    borderColor: "#dc2626"
+                    borderColor: "rgba(239, 68, 68, 0.4)"
                 },
                 inlineButtonText: {
-                    color: "#e2e8f0",
+                    color: "#a5b4fc",
                     fontSize: 13,
-                    fontWeight: "600"
+                    fontWeight: "700",
+                    letterSpacing: 0.3
                 },
                 inlineButtonDangerText: {
-                    color: "#fecaca"
+                    color: "#fca5a5"
                 },
                 emptyState: {
-                    color: "#94a3b8",
-                    fontSize: 13
+                    color: "#64748b",
+                    fontSize: 14,
+                    textAlign: "center",
+                    fontStyle: "italic",
+                    paddingVertical: 20
                 }
             })
         }, [o])
