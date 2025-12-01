@@ -1,0 +1,16 @@
+{
+  "name": "Messaging Local",
+  "description": "Create and manage local messages in Discord channels. Send test messages that appear only on your device, with support for embeds, link previews, and message caching.",
+  "authors": [
+    {
+      "name": "Unknown",
+      "id": "0"
+    }
+  ],
+  "main": "messagelocal.js",
+  "vendetta": {
+    "icon": "ChatIcon"
+  },
+  "hash": "5FDE4887CD433C9EE162EE97869F5D488EE4D6FDE8F1A2BD6505E8F7DC21B51C"
+}
+
